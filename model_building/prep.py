@@ -96,7 +96,7 @@ for file_path in files:
     api.upload_file(
         path_or_fileobj=file_path,
         path_in_repo=file_path,
-        repo_id="<your_huggingface_username>/visit-with-us-data",
+        repo_id="ektasoni2210/visit-with-us-data",
         repo_type="dataset",
     )
 
