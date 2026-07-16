@@ -1,4 +1,3 @@
-
 # -----------------------------
 # Import Libraries
 # -----------------------------
@@ -40,10 +39,10 @@ api = HfApi(token=os.getenv("HF_TOKEN"))
 # -----------------------------
 # Load Train/Test Data
 # -----------------------------
-Xtrain_path = "hf://datasets/<ektasoni2210>/visit-with-us-data/Xtrain.csv"
-Xtest_path = "hf://datasets/<ektasoni2210>/visit-with-us-data/Xtest.csv"
-ytrain_path = "hf://datasets/<ektasoni2210>/visit-with-us-data/ytrain.csv"
-ytest_path = "hf://datasets/<ektasoni2210>/visit-with-us-data/ytest.csv"
+Xtrain_path = "hf://datasets/ektasoni2210/visit-with-us-data/Xtrain.csv"
+Xtest_path = "hf://datasets/ektasoni2210/visit-with-us-data/Xtest.csv"
+ytrain_path = "hf://datasets/ektasoni2210/visit-with-us-data/ytrain.csv"
+ytest_path = "hf://datasets/ektasoni2210/visit-with-us-data/ytest.csv"
 
 Xtrain = pd.read_csv(Xtrain_path)
 Xtest = pd.read_csv(Xtest_path)
@@ -192,7 +191,7 @@ with mlflow.start_run():
     # -----------------------------
     # Upload Model to Hugging Face
     # -----------------------------
-    repo_id = "<your_username>/visit-with-us-model"
+    repo_id = "ektasoni2210/visit-with-us-model"
     repo_type = "model"
 
     try:
