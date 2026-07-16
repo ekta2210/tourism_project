@@ -1,4 +1,3 @@
-
 # -----------------------------
 # Import Required Libraries
 # -----------------------------
@@ -15,7 +14,7 @@ from huggingface_hub import HfApi
 # -----------------------------
 api = HfApi(token=os.getenv("HF_TOKEN"))
 
-DATASET_PATH = "hf://datasets/<ektasoni2210>/visit-with-us-data/tourism.csv"
+DATASET_PATH = "hf://datasets/ektasoni2210/visit-with-us-data/tourism.csv"
 
 # -----------------------------
 # Load Dataset
